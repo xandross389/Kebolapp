@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/list_item_horizontal_margin"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="0.70"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:id="@+id/txtCountryName"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorLetterDark"
+            android:textStyle="bold"
+            android:text="Country Name"/>
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtCode"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_width="0dp"
+        android:layout_weight="0.30"
+        android:weightSum="1"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="+Code"/>
+
+
+</LinearLayout>

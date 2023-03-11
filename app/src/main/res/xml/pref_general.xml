@@ -1,0 +1,251 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="text"
+        android:key="nick_name"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/pref_summary_ninck_name"
+        android:title="@string/pref_title_nick_name">
+
+    </EditTextPreference>
+
+    <PreferenceCategory
+        android:title="@string/pref_header_apn_settings"
+        >
+
+        <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+        <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="Nauta"
+            android:inputType="textCapWords"
+            android:key="apn_identifier"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_apn_identifier"
+            android:title="@string/pref_title_apn_identifier" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="nauta"
+            android:inputType="text"
+            android:key="apn_name"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_apn_name"
+            android:title="@string/pref_title_apn_name" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:inputType="textEmailAddress"
+            android:key="apn_username"
+            android:maxLines="1"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_apn_username"
+            android:title="@string/pref_title_apn_username" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:inputType="textPassword"
+            android:key="apn_password"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_apn_password"
+            android:title="@string/pref_title_apn_password" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="@string/pref_header_incoming_mail_settings"
+        >
+
+        <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+        <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="pop.nauta.cu"
+            android:inputType="text"
+            android:key="im_server_name"
+            android:maxLines="1"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_im_server_name"
+            android:title="@string/pref_title_im_server_name" />
+
+        <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+             dismiss it. -->
+        <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+        <ListPreference
+            android:defaultValue="110"
+            android:entries="@array/pref_im_server_port_titles"
+            android:entryValues="@array/pref_im_server_port_values"
+            android:key="im_server_port"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="@string/pref_summary_im_server_port"
+            android:title="@string/pref_title_im_server_port" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:inputType="textEmailAddress"
+            android:key="im_user_name"
+            android:maxLines="1"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_im_user_name"
+            android:title="@string/pref_title_im_user_name" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:inputType="textPassword"
+            android:key="im_password"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_im_password"
+            android:title="@string/pref_title_im_password" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="60"
+            android:inputType="number"
+            android:key="im_check_frecuency"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_im_check_frecuency"
+            android:title="@string/pref_title_im_check_frecuency" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="@string/pref_header_outgoing_mail_settings"
+        >
+        <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+        <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="smtp.nauta.cu"
+            android:inputType="textCapWords"
+            android:key="om_server_name"
+            android:maxLines="1"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_om_server_name"
+            android:title="@string/pref_title_om_server_name" />
+
+        <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+             dismiss it. -->
+        <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+        <ListPreference
+            android:defaultValue="25"
+            android:entries="@array/pref_om_server_port_titles"
+            android:entryValues="@array/pref_om_server_port_values"
+            android:key="om_server_port"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="@string/pref_summary_om_server_port"
+            android:title="@string/pref_title_om_server_port" />
+
+        <!-- A 'parent' preference, which enables/disables child preferences (below)
+             when checked/unchecked. -->
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="om_req_auth"
+            android:title="@string/pref_title_om_req_auth" />
+
+        <EditTextPreference
+            android:dependency="om_req_auth"
+            android:capitalize="words"
+            android:inputType="textEmailAddress"
+            android:key="om_user_name"
+            android:maxLines="1"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_om_user_name"
+            android:title="@string/pref_title_om_user_name" />
+
+        <EditTextPreference
+            android:dependency="om_req_auth"
+            android:capitalize="words"
+            android:inputType="textPassword"
+            android:key="om_password"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_om_password"
+            android:title="@string/pref_title_om_password" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="@string/pref_header_data_usage_settings"
+        >
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="du_wifi_allowed"
+            android:title="@string/pref_title_du_wifi_allowed" />
+
+        <ListPreference
+            android:defaultValue="all"
+            android:dependency="du_wifi_allowed"
+            android:entries="@array/pref_data_usage_allowed_files_titles"
+            android:entryValues="@array/pref_data_usage_allowed_files_values"
+            android:key="du_alowed_files_over_wifi"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="@string/pref_summary_du_allowed_files_over_wifi"
+            android:title="@string/pref_title_du_allowed_files_over_wifi"
+            />
+
+        <ListPreference
+            android:defaultValue="720x480"
+            android:dependency="du_wifi_allowed"
+            android:entries="@array/pref_data_usage_default_resize_resolution_titles"
+            android:entryValues="@array/pref_data_usage_default_resize_resolution_values"
+            android:key="du_def_image_resolution_over_wifi"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="@string/pref_summary_du_def_image_resolution_over_wifi"
+            android:title="@string/pref_title_du_def_image_resolution_over_wifi" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="du_mobile_data_allowed"
+            android:title="@string/pref_title_du_mobile_data_allowed" />
+
+        <ListPreference
+            android:defaultValue="all"
+            android:dependency="du_mobile_data_allowed"
+            android:entries="@array/pref_data_usage_allowed_files_titles"
+            android:entryValues="@array/pref_data_usage_allowed_files_values"
+            android:key="du_alowed_files_over_mobile_data"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="@string/pref_summary_du_allowed_files_over_mobile_data"
+            android:title="@string/pref_title_du_allowed_files_over_mobile_data"
+            />
+
+        <ListPreference
+            android:dependency="du_wifi_allowed"
+            android:defaultValue="720x480"
+            android:entries="@array/pref_data_usage_default_resize_resolution_titles"
+            android:entryValues="@array/pref_data_usage_default_resize_resolution_values"
+            android:key="du_def_image_resolution_over_mobile_data"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="@string/pref_summary_du_def_image_resolution_over_mobile_data"
+            android:title="@string/pref_title_du_def_image_resolution_over_mobile_data" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

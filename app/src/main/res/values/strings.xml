@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">Kebolapp</string>
+    <string name="title_activity_main">Kebolapp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Ajustes</string>
+    <string name="register_title">Verificar número de teléfono</string>
+    <string name="register_description">Utilizamos tu número telefónico y agenda de contactos para conectarte con tus amigos y familiares. Te enviaremos un SMS o un correo electrónico para verificar tu número de teléfono</string>
+    <string name="register_privacy_policy">Al proceder con el registro, aceptas nuestros Términos del servicio y Política de privacidad.</string>
+    <string name="register_hint_country_code">Código</string>
+    <string name="register_hint_phone_number">Número de teléfono</string>
+    <string name="register_button_text">Registrarse</string>
+    <string name="title_activity_search_country">Elige tu país</string>
+    <string name="title_activity_register">Registrarse</string>
+    <string name="search_country_code_hint">Buscar país</string>
+    <string name="register_country_hint">Selecciona tu país</string>
+    <string name="country_code_not_valid">Código de país no válido</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_chat_session">Chat</string>
+    <string name="title_activity_settings">Ajustes de la aplicación</string>
+    <string name="chat_message_state_sent">Enviado</string>
+    <string name="chat_message_state_queued">En cola</string>
+    <string name="chat_message_state_received">Recibido</string>
+    <string name="chat_message_state_error">Error</string>
+    <string name="chat_message_state_unknow">Desconocido</string>
+
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_summary_ninck_name">Nombre identificador de usuario</string>
+    <string name="pref_title_nick_name">Nick</string>
+
+    <!-- Notifications -->
+
+    <string name="pref_header_notifications">Notificaciones</string>
+    <string name="pref_title_new_message_notifications">Notificar nuevos mensajes</string>
+    <string name="pref_title_vibrate">Vibrar</string>
+    <string name="pref_title_ringtone">Tono</string>
+    <string name="pref_ringtone_silent">Silencioso</string>
+
+    <!-- settings for Data Usage -->
+
+    <string name="pref_header_data_usage_settings">Uso de datos</string>
+    <string name="pref_summary_du_allowed_files_over_wifi">Permitir envío de ficheros mediante wifi</string>
+    <string name="pref_title_du_allowed_files_over_wifi">Ficheros permitidos mediante wifi</string>
+    <string name="pref_summary_du_def_image_resolution_over_wifi">Redimensionar por defecto al temaño seleccionado al enviar una imagen adjunta mediante Wifi</string>
+    <string name="pref_title_du_def_image_resolution_over_wifi">Resolución de imagen sobre wifi</string>
+    <string name="pref_summary_du_allowed_files_over_mobile_data">Permitir envío de ficheros mediante Datos Móviles</string>
+    <string name="pref_title_du_allowed_files_over_mobile_data">Ficheros permitidos mediante Datos Móviles</string>
+    <string name="pref_summary_du_def_image_resolution_over_mobile_data">Redimensionar por defecto al temaño seleccionado al enviar una imagen adjunta mediante Datos Móviles</string>
+    <string name="pref_title_du_def_image_resolution_over_mobile_data">Resolución de imagen sobre Datos Móviles</string>
+    <string name="pref_title_du_wifi_allowed">Usar wifi</string>
+    <string name="pref_title_du_mobile_data_allowed">Usar Datos Móviles</string>
+
+    <string-array name="pref_data_usage_allowed_files_titles">
+        <item>Todos</item>
+        <item>Imágenes</item>
+        <item>Audio</item>
+        <item>Ninguno</item>
+    </string-array>
+    <string-array name="pref_data_usage_allowed_files_values">
+        <item>all</item>
+        <item>images</item>
+        <item>sounds</item>
+        <item>nothing</item>
+    </string-array>
+
+    <string-array name="pref_data_usage_default_resize_resolution_titles">
+        <item>Original (No redimensionar)</item>
+        <item>1240x1024</item>
+        <item>1024x768</item>
+        <item>800x600</item>
+        <item>720x480</item>
+    </string-array>
+    <string-array name="pref_data_usage_default_resize_resolution_values">
+        <item>original</item>
+        <item>1240x1024</item>
+        <item>1024x768</item>
+        <item>800x600</item>
+        <item>720x480</item>
+    </string-array>
+
+    <!-- settings for Incoming Mail Server -->
+
+    <string name="pref_header_incoming_mail_settings">Ajustes de correo entrante</string>
+    <string name="pref_summary_im_server_name">Nombre del servidor POP3</string>
+    <string name="pref_title_im_server_name">Nombre del servidor</string>
+    <string name="pref_summary_im_server_port">Puero del servidor POP3</string>
+    <string name="pref_title_im_server_port">Puerto</string>
+    <string name="pref_summary_im_user_name"><![CDATA[<tu usuario de correo>@nauta.cu]]></string>
+    <string name="pref_title_im_user_name">Usuario de correo Nauta</string>
+    <string name="pref_summary_im_password">Contraseña de tu usuario de correro Nauta</string>
+    <string name="pref_title_im_password">Contraseña de correo Nauta</string>
+    <string name="pref_summary_im_check_frecuency">Frecuencia con la que revisarán los mensajes nuevos</string>
+    <string name="pref_title_im_check_frecuency">Frecuencuia de revisión</string>
+
+    <string-array name="pref_im_server_port_titles">
+        <item>110 (Estándar)</item>
+        <item>995 (Cifrado)</item>
+    </string-array>
+    <string-array name="pref_im_server_port_values">
+        <item>110</item>
+        <item>995</item>
+    </string-array>
+
+    <!-- settings for Outgoing Mail Server -->
+
+    <string name="pref_header_outgoing_mail_settings">Ajustes de correo saliente</string>
+    <string name="pref_summary_om_server_name">Nombre del servidor SMTP</string>
+    <string name="pref_title_om_server_name">Nombre del servidor</string>
+    <string name="pref_summary_om_server_port">Puero del servidor SMTP</string>
+    <string name="pref_title_om_server_port">Puerto</string>
+    <string name="pref_title_om_req_auth">Requiere autenticación</string>
+    <string name="pref_summary_om_user_name"><![CDATA[<tu usuario de correo>@nauta.cu]]></string>
+    <string name="pref_title_om_user_name">Usuario de correo Nauta</string>
+    <string name="pref_summary_om_password">Contraseña de tu usuario de correro Nauta</string>
+    <string name="pref_title_om_password">Contraseña de correo Nauta</string>
+
+    <string-array name="pref_om_server_port_titles">
+        <item>25 (Estándar)</item>
+        <item>587 (Alternativo)</item>
+        <item>565 (Cifrado)</item>
+    </string-array>
+    <string-array name="pref_om_server_port_values">
+        <item>25</item>
+        <item>587</item>
+        <item>565</item>
+    </string-array>
+
+    <!-- settings for APN -->
+
+    <string name="pref_header_apn_settings">Ajustes del APN</string>
+    <string name="pref_title_apn_name">APN</string>
+    <string name="pref_summary_apn_name">APN</string>
+    <string name="pref_summary_apn_identifier">Identificador para el APN</string>
+    <string name="pref_title_apn_identifier">Nombre del APN</string>
+    <string name="pref_summary_apn_username"><![CDATA[<tu usuario>@nauta.com.cu]]></string>
+    <string name="pref_title_apn_username">Usuario de internet Nauta</string>
+    <string name="pref_summary_apn_password">Contraseña de su cuenta de internet</string>
+    <string name="pref_title_apn_password">Contraseña de internet Nauta</string>
+    <string name="chat_send_message_hint">Escribir mensaje...</string>
+    <string name="title_activity_contact_details">Detalles del contacto</string>
+
+    <!-- strings for Contacts Details -->
+
+    <string name="contact_details_title_settings">Ajustes para el contacto</string>
+    <string name="contact_details_title_block_messages">Bloquear mensajes</string>
+    <string name="contact_details_summary_block_messages">No recibir ningún mensaje de este contacto</string>
+    <string name="contact_details_title_contact_info">Estado e información del contacto</string>
+    <string name="contact_details_last_state">Último estado conocido</string>
+    <string name="contact_details_mail_address">Dirección de correo</string>
+    <string name="contact_details_phone_number">Número de teléfono</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="write_sms_body">Ya probaste Kebolapp, la nueva aplicación de chateo para cubanos mediante correo Nauta?</string>
+    <string name="suggest_email_chooser_title">Seleccione su aplicación de correo preferida:</string>
+    <string name="suggest_email_chooser_err_message">Error intentando realizar llamada</string>
+    <string name="pick_call_contact_err_message">Error intentando realizar llamada</string>
+    <string name="suggest_email_subject">Sobre Kebolapp</string>
+    <string name="suggest_email_body">Kebolapp es una aplicación para chatear mediante correo nauta</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_attach">Adjuntar</string>
+    <string name="action_contact_details">Ver contacto</string>
+    <string name="action_clean_chat">Limpiar chat</string>
+    <string name="action_block_contact">Bloquear</string>
+    <string name="action_unblock_contact">Desbloquear</string>
+    <string name="message_write_something_to_send">Escriba algo para enviar</string>
+    <string name="message_err_sending_message">Error enviado mensaje el mensaje</string>
+    <string name="contact_blocked_message">Los mensajes de este usuario ahora están bloqueados</string>
+    <string name="contact_unblocked_message">Los mensajes de este usuario han sido desbloqueados</string>
+    <string name="search_country_specify_valid_criteria">Debe especificar un criterio a buscar</string>
+
+</resources>

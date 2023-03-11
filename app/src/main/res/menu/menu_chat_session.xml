@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.inbitart.kebolapp.ChatSessionActivity">
+
+    <item
+        android:id="@+id/action_attach"
+        android:orderInCategory="100"
+        android:title="@string/action_attach"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_ab_attach"/>
+    <item
+        android:id="@+id/action_contact_details"
+        android:orderInCategory="200"
+        android:title="@string/action_contact_details"
+        android:icon="@drawable/contact_gray"
+        app:showAsAction="ifRoom" />
+
+    <group
+        android:id="@+id/group_unclear_chat">
+
+        <item
+            android:id="@+id/action_clean_chat"
+            android:orderInCategory="300"
+            android:title="@string/action_clean_chat"
+            android:icon="@drawable/ic_ab_fwd_delete"
+            app:showAsAction="ifRoom" />
+    </group>
+
+    <group
+        android:id="@+id/group_unblocked_contact">
+
+        <item
+            android:id="@+id/action_block_contact"
+            android:orderInCategory="400"
+            android:title="@string/action_block_contact"
+            android:icon="@drawable/intro4"
+            app:showAsAction="ifRoom" />
+    </group>
+
+
+    <group
+        android:id="@+id/group_blocked_contact">
+
+        <item
+            android:id="@+id/action_unblock_contact"
+            android:orderInCategory="400"
+            android:title="@string/action_unblock_contact"
+            android:icon="@drawable/intro4"
+            app:showAsAction="ifRoom" />
+    </group>
+</menu>
